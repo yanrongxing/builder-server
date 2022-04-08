@@ -169,6 +169,7 @@ export = async function main() {
       version: '1',
       memoryReservation: 1024,
       cpuReservation: env === 'prd' ? 1024 : 256,
+      desiredCount: env === 'prd' ? 3 : 1,
       securityGroups: [
         (await acceptDbSecurityGroup()).id,
         await acceptBastionSecurityGroupId(),
