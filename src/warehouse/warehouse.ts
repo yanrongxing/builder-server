@@ -7,13 +7,13 @@ const WAREHOUSE_CONTEXT_PREFIX: string | undefined = env.get(
   'WAREHOUSE_CONTEXT_PREFIX'
 )
 
-if (!WAREHOUSE_URL) {
-  throw new Error('The WAREHOUSE_URL is not set.')
-}
+// if (!WAREHOUSE_URL) {
+//   throw new Error('The WAREHOUSE_URL is not set.')
+// }
 
-if (!WAREHOUSE_TOKEN) {
-  throw new Error('The WAREHOUSE_TOKEN is not set.')
-}
+// if (!WAREHOUSE_TOKEN) {
+//   throw new Error('The WAREHOUSE_TOKEN is not set.')
+// }
 
 /**
  * Sends data to the warehouse to be stored.
