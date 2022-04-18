@@ -23,13 +23,13 @@ export class NFTService {
     const osURL = env.get<string | undefined>('OPEN_SEA_URL')
     const osApiKey = env.get<string | undefined>('OPEN_SEA_API_KEY')
 
-    // if (!osURL) {
-    //   throw new Error('OPEN_SEA_URL not defined')
-    // }
+    if (!osURL) {
+      throw new Error('OPEN_SEA_URL not defined')
+    }
 
-    // if (!osApiKey) {
-    //   throw new Error('OPEN_SEA_API_KEY not defined')
-    // }
+    if (!osApiKey) {
+      throw new Error('OPEN_SEA_API_KEY not defined')
+    }
 
     this.OPEN_SEA_URL = osURL
     this.OPEN_SEA_API_KEY = osApiKey
